@@ -1,0 +1,9 @@
+ Trong một folder mới tạo ra, mình thực hiện lần lượt các lếnh sau. Hãy liệt kê các file theo từng vùng sau khi thao tác một loạt các lệnh sau:
+ 
+ a. Tạo 3 files: file1, file2, file3 --> Vùng Working Directory
+ b. Chạy lệnh: git init --> Vùng Working Directory
+ c. Chạy lệnh: git commit -m"init project" --> Vùng Working Directory 
+ 
+ d. Chạy lệnh: git add file1 --> Vùng Staging Area
+ e. Chạy lệnh: git commit -m"add file1" --> Vùng Reposity
+ f. Chạy lệnh: git commit -m"add file" --> Vùng Reposity
