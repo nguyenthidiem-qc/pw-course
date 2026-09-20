@@ -13,3 +13,5 @@ const idealWeight = (heightlasttwodigits * 9 / 10); //cân nặng lý tưởng
 const maxWeight = heightlasttwodigits;
 const minWeight = (heightlasttwodigits * 8 / 10);
 console.log(`Cân nặng lý tưởng:  ${idealWeight}kg, Cân nặng tối đa: ${maxWeight}kg, Cân nặng tối thiểu: ${minWeight}kg`);
+//Kết quả in ra: Cân nặng lý tưởng:  58.5kg, Cân nặng tối đa: 65kg, Cân nặng tối thiểu: 52kg
+
