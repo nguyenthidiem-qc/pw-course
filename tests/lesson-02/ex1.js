@@ -23,5 +23,4 @@ let number1 = 20;
 if (number1 % 2 === 0) {
     isEvent = true;
     console.log(isEvent);
-
 }
