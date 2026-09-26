@@ -1,0 +1,25 @@
+#1. git commit --amend:
+- dùng để sửa commit gần nhất.
+- Có 2 trường hợp cần dùng:
+    + Khi tạo sai message khi commit (git commit -m"logn 01")
+    + Khi add thiếu file khi commit: chỉ cần git add file2 và git commit --amend. Khi đó git sẽ lấy commit gần nhất,
+    thêm file2 vào và tạo lại commit
+
+#2. git commit --amend -m"message":
+- cũng dùng để sửa commit gần nhất và sửa lại message cho commit
+- VD: 
+git add login.js
+git commit -m"add login file"
+git add logout.js
+git commit --amend -m"add login and  logout file"
+
+- ngoài ra nếu chỉ muốn add commit mà không muốn update message thì dùng: git commit --amend --no-edit
+
+#3. git restore --staged <tên file>:
+- move file từ vùng Staging về lại vùng Working
+
+#4. git reset HEAD~<số commit>:
+- move commit từ vùng Repository về lại vùng Working
+
+
+ 
