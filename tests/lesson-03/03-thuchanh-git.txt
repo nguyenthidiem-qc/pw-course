@@ -1,0 +1,23 @@
+Giả sử có folder Demo mới được tạo ra. Hãy liệt kê các file theo từng vùng sau khi thao tác các lệnh sau:
+
+a. Chạy lệnh init
+--> chưa có file nào được tạo
+
+b. Tạo file1.txt, file2.txt, oops/file3.txt
+--> vùng local, working
+
+c. Thêm file .gitignore, thêm vào 2 dòng:
+    - file1.txt
+    - oops/
+--> Vùng working: .gitignore, file2.txt
+
+d. Chạy lệnh git add .
+--> Vùng working: .gitignore
+--> vùng Staging: file2.txt
+
+e. Chạy lệnh: git commit -m"init-project"
+--> Vùng working: .gitignore
+--> vùng Repository: file2.txt
+
+
+
