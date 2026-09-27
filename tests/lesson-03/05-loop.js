@@ -53,3 +53,30 @@ for (let soThuTu = 1; soThuTu <= 10; soThuTu++) {
 
 /*5. Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và in ra tổng doanh thu.
 Biết cấu trúc object của mảng doanh thu như sau: {"month": 2, "total": 100}*/
+function tinhTongRevenue(){
+    const revenue = [
+        { "month": 1, "total": 100 },
+        { "month": 2, "total": 100 },
+        { "month": 3, "total": 100 },
+        { "month": 4, "total": 100 },
+        { "month": 5, "total": 100 },
+        { "month": 6, "total": 100 },
+        { "month": 7, "total": 100 },
+        { "month": 8, "total": 100 },
+        { "month": 9, "total": 100 },
+        { "month": 10, "total": 100 },
+        { "month": 11, "total": 100 },
+        { "month": 12, "total": 150 }
+    ]
+    let tong = 0;
+    for(let month = 0; month < revenue.length; month ++){
+        tong = tong + revenue[month].total;
+    }
+    return tong;
+    
+}
+//tinhTongRevenue();
+console.log("Doanh thu 12 tháng sẽ là: " + "" + tinhTongRevenue());
+
+//console.log("Doanh thu 12 tháng là: " + tinhTongRevenue);
+
