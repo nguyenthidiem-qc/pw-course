@@ -10,21 +10,21 @@ multiply(4, 6);
 //2. Viết hàm findMin nhận 3 tham số a, b, c trả về giá trị nhỏ nhất. Gọi hàm và in ra kết quả của 2 bộ số khác nhau
 function findMin(a, b, c) {
     if (a < b && a < c) {
-        return `Số nhỏ nhất là ${a}`;
+        return a;
 
     } else if (b < a && b < c) {
-        return `Số nhỏ nhất là ${b}`;
+        return b;
     }
     else if (a < b && a < c) {
-        return `Số nhỏ nhất là ${c}`;
+        return c;
     }
     else {
         return `Không có số nhỏ nhất trong 3 số`;
     }
 }
-console.log(findMin(1, 4, 9));
-console.log(findMin(99, 72, 98));
-console.log(findMin(77, 77, 77));
+console.log(`Số nhỏ nhất là: ${findMin(1, 4, 9)}`);
+console.log(`Số nhỏ nhất là: ${findMin(99, 72, 98)}`);
+console.log(`Số nhỏ nhất là: ${findMin(77, 77, 77)}`);
 
 
 //3. Viết hàm getTopStudents nhận 2 tham số:
@@ -38,7 +38,7 @@ function getTopStudents(students, threshold){
             result.push(students[i].name);
         }
     }
-    return `Những học sinh có điểm top là: ${result}`;
+    return result;
 }
 
 const students = [
@@ -56,4 +56,18 @@ const students = [
     }
 ];
 let threshold = 70;
-console.log(getTopStudents(students, threshold));
+console.log(`Những học sinh có điểm top là: ${getTopStudents(students, threshold)}`);
+
+/*4. Viết hàm calculateInterest nhận 3 tham số:
+    - principal: số tiền gửi ban đầu (số)
+    - rate: lãi suất hàng năm (phần trăm, vd 5 nghĩa là 5 %)
+    - years: số năm gửi.
+Hàm tính và trả về tổng số tiền (gốc + lãi) sau years năm sử dụng công thức lãi đơn: 
+    total = principal + principal*rate*years/100.
+Gọi hàm với ví dụ thực tế và in kết quả*/
+function calculateInterest (principal, rate, years){
+    const total = principal + principal*rate*years/100;
+    return total;
+}
+console.log(`Tổng số tiền tiết kiệm của A là ${calculateInterest(100, 5, 3)} ngàn`);
+console.log(`Tổng số tiền tiết kiệm của B là ${calculateInterest(500, 5, 2)} ngàn`);
